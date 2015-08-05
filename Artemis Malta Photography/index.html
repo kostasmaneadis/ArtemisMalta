@@ -1,0 +1,84 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Artemis Malta Photography</title>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<!-- **** layout stylesheet **** -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" type="text/css" href="style/style2.css" />
+  <script type="text/javascript" src="js/java.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/colour.css" />
+<!--viewer-->	
+		<link rel="stylesheet" href="style/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+</head>
+
+<body onload="banners()">
+  <div id="logo"><h1>Artemis Malta</h1><div id="links"></div></div>
+  <!--menu bar-->
+ <div id="menu">
+    <ul>
+      <li><a class="selected" href="index.html">home</a></li>
+      <li><a href="about.html">about this template</a></li>
+      <li><a  href="contact.html">contact</a></li>
+    </ul>
+  </div>
+    <!--emfanisi photografiwn-->
+		
+			<div id="test">	
+				<a class="group1" href="image/1.jpg"><img  onload="kolpo()" id="kimage0" src="image/1.jpg"></img></a>
+				<a class="group1" href="image/2.jpg"><img  onload="kolpo()" id="kimage1" src="image/2.jpg"></img></a>
+				<a class="group1" href="image/3.jpg"><img onload="kolpo()" id="kimage2" src="image/3.jpg"></img></a>
+				<a class="group1" href="image/4.jpg"><img onload="kolpo()" id="kimage3" src="image/4.jpg"></img></a>
+				<a class="group1" href="image/5.jpg"><img  onload="kolpo()" id="kimage4" src="image/5.jpg"></img></a>
+				<a class="group1" href="image/6.jpg"><img onload="kolpo()" id="kimage5" src="image/6.jpg"></img></a>
+				<a class="group1" href="image/7.jpg"><img onload="kolpo()" id="kimage6" src="image/7.jpg"></img></a>
+				<a class="group1" href="image/8.jpg"><img  onload="kolpo()" id="kimage7" src="image/8.jpg"></img></a>
+				<a class="group1" href="image/9.jpg"><img onload="kolpo()" id="kimage8" src="image/9.jpg"></img></a>
+				<a class="group1" href="image/10.jpg"><img onload="kolpo()" id="kimage9" src="image/10.jpg"></img></a>
+				<a class="group1" href="image/11.jpg"><img  onload="kolpo()" id="kimage10" src="image/11.jpg"></img></a>
+				<a class="group1" href="image/12.jpg"><img onload="kolpo()" id="kimage11" src="image/12.jpg"></img></a>
+				<a class="group1" href="image/13.jpg"><img onload="kolpo()" id="kimage12" src="image/13.jpg"></img></a>
+				<a class="group1" href="image/14.jpg"><img  onload="kolpo()" id="kimage13" src="image/14.jpg"></img></a>
+				<a class="group1" href="image/15.jpg"><img onload="kolpo()" id="kimage14" src="image/15.jpg"></img></a>
+				<a class="group1" href="image/16.jpg"><img onload="kolpo()" id="kimage15" src="image/16.jpg"></img></a>
+				<a class="group1" href="image/17.jpg"><img  onload="kolpo()" id="kimage16" src="image/17.jpg"></img></a>
+				<a class="group1" href="image/18.jpg"><img onload="kolpo()" id="kimage17" src="image/18.jpg"></img></a>
+				<a class="group1" href="image/19.jpg"><img onload="kolpo()" id="kimage18" src="image/19.jpg"></img></a>
+				<a class="group1" href="image/20.jpg"><img  onload="kolpo()" id="kimage19" src="image/20.jpg"></img></a>
+				<a class="group1" href="image/21.jpg"><img onload="kolpo()" id="kimage20" src="image/21.jpg"></img></a>
+			</div>
+	<!--banners-->
+	<div id="banners"></div>
+</body>
+</html>
